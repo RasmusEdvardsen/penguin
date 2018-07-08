@@ -15,6 +15,7 @@
 		99550A2220F16A930037EFA6 /* penguinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99550A2120F16A930037EFA6 /* penguinUITests.swift */; };
 		99550A3120F16F140037EFA6 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99550A3020F16F140037EFA6 /* CoreBluetooth.framework */; };
 		99550A3320F17B970037EFA6 /* CBCMDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99550A3220F17B970037EFA6 /* CBCMDelegate.swift */; };
+		99550A3520F21D120037EFA6 /* CBPMDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99550A3420F21D120037EFA6 /* CBPMDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		99550A2320F16A930037EFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99550A3020F16F140037EFA6 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		99550A3220F17B970037EFA6 /* CBCMDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBCMDelegate.swift; sourceTree = "<group>"; };
+		99550A3420F21D120037EFA6 /* CBPMDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBPMDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				99550A0820F16A930037EFA6 /* Assets.xcassets */,
 				99550A0D20F16A930037EFA6 /* Info.plist */,
 				99550A3220F17B970037EFA6 /* CBCMDelegate.swift */,
+				99550A3420F21D120037EFA6 /* CBPMDelegate.swift */,
 			);
 			path = penguin;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			files = (
 				99550A3320F17B970037EFA6 /* CBCMDelegate.swift in Sources */,
 				99550A0420F16A910037EFA6 /* ViewController.swift in Sources */,
+				99550A3520F21D120037EFA6 /* CBPMDelegate.swift in Sources */,
 				99550A0220F16A910037EFA6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

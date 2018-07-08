@@ -14,6 +14,6 @@ class CBCMDelegate: NSObject, CBCentralManagerDelegate {
         super.init()
     }
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
-        print("hi")
+        print("entered centralManagerDidUpdateState")
     }
 }

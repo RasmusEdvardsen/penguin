@@ -13,8 +13,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let delegate = CBCMDelegate()
-        let centralManager = CBCentralManager(delegate: delegate, queue: nil)
+        
+        
+        
+        let centralDelegate = CBCMDelegate()
+        let peripheralDelegate = CBPMDelegate()
+        let centralManager = CBCentralManager()
+        centralManager.delegate = centralDelegate
+        let peripheralManager = CBPeripheralManager()
+        peripheralManager.delegate = peripheralDelegate
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
