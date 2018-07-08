@@ -9,6 +9,11 @@
 import UIKit
 import CoreBluetooth
 
+let centralDelegate = CBCMDelegate()
+let peripheralDelegate = CBPMDelegate()
+let centralManager = CBCentralManager()
+let peripheralManager = CBPeripheralManager()
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -16,11 +21,9 @@ class ViewController: UIViewController {
         
         
         
-        let centralDelegate = CBCMDelegate()
-        let peripheralDelegate = CBPMDelegate()
-        let centralManager = CBCentralManager()
+        
         centralManager.delegate = centralDelegate
-        let peripheralManager = CBPeripheralManager()
+        
         peripheralManager.delegate = peripheralDelegate
         
         
