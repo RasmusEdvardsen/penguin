@@ -14,6 +14,8 @@
 		99550A1720F16A930037EFA6 /* penguinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99550A1620F16A930037EFA6 /* penguinTests.swift */; };
 		99550A2220F16A930037EFA6 /* penguinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99550A2120F16A930037EFA6 /* penguinUITests.swift */; };
 		99550A3120F16F140037EFA6 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99550A3020F16F140037EFA6 /* CoreBluetooth.framework */; };
+		99550AB120FD1E260037EFA6 /* CentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99550AB020FD1E260037EFA6 /* CentralManagerDelegate.swift */; };
+		99550AB320FD1E3E0037EFA6 /* PeripheralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99550AB220FD1E3E0037EFA6 /* PeripheralManagerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		99550A2120F16A930037EFA6 /* penguinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = penguinUITests.swift; sourceTree = "<group>"; };
 		99550A2320F16A930037EFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99550A3020F16F140037EFA6 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		99550AB020FD1E260037EFA6 /* CentralManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralManagerDelegate.swift; sourceTree = "<group>"; };
+		99550AB220FD1E3E0037EFA6 /* PeripheralManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralManagerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				99550A0520F16A910037EFA6 /* Main.storyboard */,
 				99550A0820F16A930037EFA6 /* Assets.xcassets */,
 				99550A0D20F16A930037EFA6 /* Info.plist */,
+				99550AB020FD1E260037EFA6 /* CentralManagerDelegate.swift */,
+				99550AB220FD1E3E0037EFA6 /* PeripheralManagerDelegate.swift */,
 			);
 			path = penguin;
 			sourceTree = "<group>";
@@ -265,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99550AB320FD1E3E0037EFA6 /* PeripheralManagerDelegate.swift in Sources */,
+				99550AB120FD1E260037EFA6 /* CentralManagerDelegate.swift in Sources */,
 				99550A0420F16A910037EFA6 /* ViewController.swift in Sources */,
 				99550A0220F16A910037EFA6 /* AppDelegate.swift in Sources */,
 			);
