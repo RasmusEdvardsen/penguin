@@ -23,6 +23,10 @@ class LocationController : NSObject, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
     }
     
+    func printstuff(){
+        print("outside classes variables of type object works through vc's")
+    }
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         var locations = locations.last!
         print(locations)

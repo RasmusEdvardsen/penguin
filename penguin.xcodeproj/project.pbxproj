@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		99550A0220F16A910037EFA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99550A0120F16A910037EFA6 /* AppDelegate.swift */; };
-		99550A0420F16A910037EFA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99550A0320F16A910037EFA6 /* ViewController.swift */; };
 		99550A0720F16A910037EFA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99550A0520F16A910037EFA6 /* Main.storyboard */; };
 		99550A0920F16A930037EFA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99550A0820F16A930037EFA6 /* Assets.xcassets */; };
 		99550A1720F16A930037EFA6 /* penguinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99550A1620F16A930037EFA6 /* penguinTests.swift */; };
@@ -18,6 +17,8 @@
 		99550AB320FD1E3E0037EFA6 /* PeripheralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99550AB220FD1E3E0037EFA6 /* PeripheralManagerDelegate.swift */; };
 		99550AB52109B3F30037EFA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99550AB42109B3F30037EFA6 /* CoreLocation.framework */; };
 		99550ABB210DEF170037EFA6 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99550ABA210DEF170037EFA6 /* LocationController.swift */; };
+		99550ABF210DF7C80037EFA6 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99550ABE210DF7C80037EFA6 /* HomeController.swift */; };
+		99550AC1210DF89C0037EFA6 /* DiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99550AC0210DF89C0037EFA6 /* DiscoveryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 /* Begin PBXFileReference section */
 		995509FE20F16A910037EFA6 /* penguin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = penguin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99550A0120F16A910037EFA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		99550A0320F16A910037EFA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99550A0620F16A910037EFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99550A0820F16A930037EFA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99550A0D20F16A930037EFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +55,8 @@
 		99550AB220FD1E3E0037EFA6 /* PeripheralManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralManagerDelegate.swift; sourceTree = "<group>"; };
 		99550AB42109B3F30037EFA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		99550ABA210DEF170037EFA6 /* LocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
+		99550ABE210DF7C80037EFA6 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		99550AC0210DF89C0037EFA6 /* DiscoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,13 +112,14 @@
 			isa = PBXGroup;
 			children = (
 				99550A0120F16A910037EFA6 /* AppDelegate.swift */,
-				99550A0320F16A910037EFA6 /* ViewController.swift */,
 				99550A0520F16A910037EFA6 /* Main.storyboard */,
 				99550A0820F16A930037EFA6 /* Assets.xcassets */,
 				99550A0D20F16A930037EFA6 /* Info.plist */,
 				99550AB020FD1E260037EFA6 /* CentralManagerDelegate.swift */,
 				99550AB220FD1E3E0037EFA6 /* PeripheralManagerDelegate.swift */,
 				99550ABA210DEF170037EFA6 /* LocationController.swift */,
+				99550ABE210DF7C80037EFA6 /* HomeController.swift */,
+				99550AC0210DF89C0037EFA6 /* DiscoveryController.swift */,
 			);
 			path = penguin;
 			sourceTree = "<group>";
@@ -278,9 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99550AC1210DF89C0037EFA6 /* DiscoveryController.swift in Sources */,
 				99550AB320FD1E3E0037EFA6 /* PeripheralManagerDelegate.swift in Sources */,
 				99550AB120FD1E260037EFA6 /* CentralManagerDelegate.swift in Sources */,
-				99550A0420F16A910037EFA6 /* ViewController.swift in Sources */,
+				99550ABF210DF7C80037EFA6 /* HomeController.swift in Sources */,
 				99550ABB210DEF170037EFA6 /* LocationController.swift in Sources */,
 				99550A0220F16A910037EFA6 /* AppDelegate.swift in Sources */,
 			);
