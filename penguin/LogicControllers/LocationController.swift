@@ -47,4 +47,8 @@ class LocationController : NSObject {
     func start(){
         locationManager.startUpdatingLocation()
     }
+    
+    func stop() {
+        locationManager.stopUpdatingLocation()
+    }
 }
