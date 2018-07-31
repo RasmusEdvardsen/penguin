@@ -24,6 +24,7 @@ class HomeController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //todo: make a popup that says we need access to location services
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         switch identifier {
         case "toDiscovery":

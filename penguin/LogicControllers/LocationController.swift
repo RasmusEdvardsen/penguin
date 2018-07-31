@@ -29,11 +29,13 @@ class LocationController : NSObject {
         case .restricted, .denied:
             // Disable location features
             print("restriced, denied")
+            locationManager.requestAlwaysAuthorization()
             break
             
         case .authorizedWhenInUse:
             // Enable basic location features
             print("authorizedwheninuse")
+            locationManager.requestAlwaysAuthorization()
             break
             
         case .authorizedAlways:
