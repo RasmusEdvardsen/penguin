@@ -21,6 +21,8 @@ class DiscoveryController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //todo: stop location updates in prepare segue
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.

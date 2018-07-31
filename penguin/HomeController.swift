@@ -30,7 +30,7 @@ class HomeController: UIViewController {
         case "toDiscovery":
             let success = locationController.enableLocationServices()
             if !success {
-                //todo: location service not enabled, should be enabled
+                //todo: prompt that location services are needed
                 return false
             }
             break
