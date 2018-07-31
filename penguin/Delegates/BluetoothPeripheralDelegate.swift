@@ -9,7 +9,7 @@
 import Foundation
 import CoreBluetooth
 
-class PeripheralManagerDelegate : NSObject, CBPeripheralManagerDelegate {
+class BluetoothPeripheralDelegate : NSObject, CBPeripheralManagerDelegate {
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
         switch peripheral.state {
         case .unknown:

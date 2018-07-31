@@ -10,22 +10,13 @@ import UIKit
 import CoreBluetooth
 
 var locationController = LocationController()
+var bluetoothCentralController = BluetoothCentralController()
+var bluetoothPeripheralController = BluetoothPeripheralController()
 
 class HomeController: UIViewController {
 
-    var centralManager: CBCentralManager!
-    var peripheralManager: CBPeripheralManager!
-    
-    var centralManagerDelegate = CentralManagerDelegate()
-    var peripheralManagerDelegate = PeripheralManagerDelegate()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        locationController.test()
-        centralManager = CBCentralManager(delegate: centralManagerDelegate, queue: nil)
-        peripheralManager = CBPeripheralManager(delegate: peripheralManagerDelegate, queue: nil)
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -33,12 +24,19 @@ class HomeController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
-    // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //todo: also find out how to stop location search again on back pressed.
+        switch segue.identifier!.lowercased() {
+        case "todiscovery":
+            let success = locationController.enableLocationServices()
+            if !success {
+                //todo: cancel segue here!
+            }
+            break
+        default:
+            break
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }

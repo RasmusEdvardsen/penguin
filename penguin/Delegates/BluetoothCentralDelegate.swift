@@ -9,11 +9,7 @@
 import Foundation
 import CoreBluetooth
 
-class CentralManagerDelegate : NSObject, CBCentralManagerDelegate {
-    override init() {
-        super.init()
-    }
-    
+class BluetoothCentralDelegate : NSObject, CBCentralManagerDelegate {
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch central.state {
         case .unknown:

@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="oXF-YC-5HM" kind="show" id="Bka-FQ-SWn"/>
+                                    <segue destination="oXF-YC-5HM" kind="show" identifier="toDiscovery" id="Bka-FQ-SWn"/>
                                 </connections>
                             </button>
                         </subviews>
