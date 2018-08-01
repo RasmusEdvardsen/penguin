@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import MapKit
 
+//MAKE THIS DELEGATE OF LOCATIONMANAGERDELEGATE
 class DiscoveryController: UIViewController {
-
+    
+    @IBOutlet var discoveryView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
         locationController.start()
+        locationController.locationManagerDelegate.view = discoveryView
         // Do any additional setup after loading the view.
     }
     
