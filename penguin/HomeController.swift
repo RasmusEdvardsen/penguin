@@ -31,6 +31,9 @@ class HomeController: UIViewController {
             let success = locationController.enableLocationServices()
             if !success {
                 //todo: prompt that location services are needed
+                let alert = UIAlertController(title: "Location Services", message: "This app requires permission to use your locations. This can be set under settings.", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
                 return false
             }
             break
